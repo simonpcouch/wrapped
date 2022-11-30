@@ -1,0 +1,21 @@
+Package: wrapped
+Title: Analyze your own music listening data
+Version: 0.0.1
+Authors@R: 
+    person("Simon", "Couch", , "simonpatrickcouch@gmail.com", role = c("aut", "cre"))
+Description: Analyze your own music listening data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    xml2,
+    dplyr,
+    tibble,
+    tidyr,
+    purrr,
+    janitor,
+    lubridate
+RoxygenNote: 7.2.2
+Depends: 
+    R (>= 2.10)
+LazyData: true

@@ -1,0 +1,17 @@
+utils::globalVariables(c(
+  "%>%",
+  ".",
+  "album",
+  "artist",
+  "date_added", 
+  "entry_id",
+  "everything", 
+  "genre",
+  "id",
+  "key",
+  "name",
+  "play_count", 
+  "skip_count", 
+  "type",
+  "value"
+))

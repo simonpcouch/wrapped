@@ -1,0 +1,53 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# wrapped
+
+This package contains source code for reading your Music (as in, the Apple Music app) listening data into a tidy data frame. I used the output as a starting point for a Wrapped-like analysis of what I listen to. :)
+
+## Installation
+
+You can install wrapped from [GitHub](https://github.com/simonpcouch/wrapped) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("simonpcouch/wrapped")
+```
+
+## Usage
+
+The package contains one function, `wrap_library()`, which takes a path to an `.xml` file and a year, and outputs a tidy data frame. 
+
+``` r
+wrap_library("Library.xml", 2022L)
+```
+
+The `.xml` file should be the output of navigating to:
+
+```
+Music > File > Library > Export Library
+```
+
+It also contains a data frame, `wrapped`, which is the (slightly modified) output of running this function on my own library:
+
+```{r, include = FALSE, message = FALSE, warning = FALSE}
+library(tibble)
+```
+
+```{r}
+library(wrapped)
+
+wrapped
+```
