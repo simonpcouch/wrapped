@@ -6,7 +6,8 @@
 This package contains source code for reading your Music (as in, the
 Apple Music app) listening data into a tidy data frame. I used the
 output as a starting point for a Wrapped-like analysis of what I listen
-to. :)
+to. You can read that analysis on [my
+blog](https://www.simonpcouch.com/blog/listening-2022/). :)
 
 ## Installation
 
