@@ -51,7 +51,7 @@ wrap_library <- function(path, year) {
     #        lubridate::month(date_added) != 5L & 
     #        lubridate::day(date_added) != 13L) %>%
     # for someone whose library isn't borked:
-    dplyr::filter(lubridate::year(date_added) == year) %>%
+    dplyr::filter(lubridate::year(date_added) %in% year) %>%
     dplyr::arrange(dplyr::desc(play_count))
     
   res
